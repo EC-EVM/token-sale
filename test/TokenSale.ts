@@ -9,7 +9,6 @@ const TEST_PURCHASE_SIZE = parseEther("1");
 const TEST_RETURN_TOKENS_SIZE = parseEther("50");
 const MINTER_ROLE = keccak256(toHex("MINTER_ROLE"));;
 
-
   async function deployContractFixture() {
     const publicClient = await viem.getPublicClient()
     const [owner, otherAccount] = await viem.getWalletClients();
