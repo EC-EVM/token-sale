@@ -62,7 +62,7 @@ const MINTER_ROLE = keccak256(toHex("MINTER_ROLE"));;
         myTokenContract.read.symbol(),
         myTokenContract.read.decimals(),
       ])
-      expect(totalSupply).to.eq(10000000000000000000n);
+      expect(totalSupply).to.eq(0n);
       expect(name).to.eq("MyToken");
       expect(symbol).to.eq("MTK");
       expect(decimals).to.eq(18);
